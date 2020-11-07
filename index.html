@@ -28,76 +28,140 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">
         A simple calendar app for scheduling your work day 
-        <br></br> Saturday, November 14 </p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      
-       <table class="table">
-        <caption>Let's Get to Work!</caption>
-        <thead>
-          <tr style="border-style:ridge;">
-            <th scope="col-2">Time</th>
-            <th scope="col-8" style="text-align: center;">Agenda</th>
-            <th scope="col-2">Save</th>
-          </tr>
-        </thead>
 
-        <tbody>
-          <tr>
-            <th scope="col-2" style="border-style:ridge;" style="border-style:ridge;">9am</th>
-            <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
-            <td class="col-2" style="border-style:ridge;">Otto</td>
-          </tr>
-          <tr>
-            <th scope="col-2" style="border-style:ridge;">10am</th>
-            <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
-            <td class="col-2" style="border-style:ridge;">Otto</td>
-          </tr>
-          <tr>
-            <th scope="col-2" style="border-style:ridge;">11am</th>
-            <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
-            <td class="col-2" style="border-style:ridge;">Otto</td>
-          </tr>
-          <tr>
-            <th scope="col-2" style="border-style:ridge;">12pm</th>
-            <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
-            <td class="col-2" style="border-style:ridge;">Otto</td>
-          </tr>
-          <tr>
-            <th scope="col-2" style="border-style:ridge;">1pm</th>
-            <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
-            <td class="col-2" style="border-style:ridge;">Otto</td>
-          </tr>
-          <tr>
-            <th scope="col-2" style="border-style:ridge;">2pm</th>
-            <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
-            <td class="col-2" style="border-style:ridge;">Otto</td>
-          </tr>
-          <tr>
-            <th scope="col-2" style="border-style:ridge;">3pm</th>
-            <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
-            <td class="col-2" style="border-style:ridge;">Otto</td>
-          </tr>
-          <tr>
-            <th scope="col-2" style="border-style:ridge;">4pm</th>
-            <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
-            <td class="col-2" style="border-style:ridge;">Otto</td>
-          </tr>
-          <tr>
-            <th scope="col-2" style="border-style:ridge;">5pm</th>
-            <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
-            <td class="col-2" style="border-style:ridge;">Otto</td>
-          </tr>
-         
+      <div class="row time-block">
+        <div class="col-2 col-md-1 hour">9AM</div>
+        <textarea class="col-8 col-md-10 description eventBlock past"></textarea>
+        <div class="col-2 col-md-1 saveBtn p-4">
+        </div>
+      </div>
 
-        </tbody>
-      </table>
+      <div class="row time-block">
+        <div class="col-2 col-md-1 hour">10AM</div>
+        <textarea class="col-8 col-md-10 description eventBlock past"></textarea>
+        <div class="col-2 col-md-1 saveBtn p-4">
+        </div>
+      </div>
       
+      <div class="row time-block">
+        <div class="col-2 col-md-1 hour">11AM</div>
+        <textarea class="col-8 col-md-10 description eventBlock past"></textarea>
+        <div class="col-2 col-md-1 saveBtn p-4">
+        </div>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-2 col-md-1 hour">12PM</div>
+        <textarea class="col-8 col-md-10 description eventBlock past"></textarea>
+        <div class="col-2 col-md-1 saveBtn p-4">
+        </div>
+      </div>
+      
+      <div class="row time-block">
+        <div class="col-2 col-md-1 hour">1PM</div>
+        <textarea class="col-8 col-md-10 description eventBlock past"></textarea>
+        <div class="col-2 col-md-1 saveBtn p-4">
+        </div>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-2 col-md-1 hour">2PM</div>
+        <textarea class="col-8 col-md-10 description eventBlock past"></textarea>
+        <div class="col-2 col-md-1 saveBtn p-4">
+        </div>
+      </div>
+      
+      <div class="row time-block">
+        <div class="col-2 col-md-1 hour">3PM</div>
+        <textarea class="col-8 col-md-10 description eventBlock past"></textarea>
+        <div class="col-2 col-md-1 saveBtn p-4">
+        </div>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-2 col-md-1 hour">4PM</div>
+        <textarea class="col-8 col-md-10 description eventBlock past"></textarea>
+        <div class="col-2 col-md-1 saveBtn p-4">
+        </div>
+      </div>
+      
+      <div class="row time-block">
+        <div class="col-2 col-md-1 hour">5PM</div>
+        <textarea class="col-8 col-md-10 description eventBlock past"></textarea>
+        <div class="col-2 col-md-1 saveBtn p-4">
+        </div>
+      </div>
     </div>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
 </html>
+
+
+
+<!-- <table class="table">
+ <caption>Let's Get to Work!</caption>
+ <thead>
+   <tr style="border-style:ridge;">
+     <th scope="col-2">Time</th>
+     <th scope="col-8" style="text-align: center;">Agenda</th>
+     <th scope="col-2">Save</th>
+   </tr>
+ </thead> -->
+
+ <!-- <tbody>
+   <tr class = "9am">
+     <th scope="col-2" style="border-style:ridge;" style="border-style:ridge;">9am</th>
+     <td class ="col-8" id="description" style="text-align: left; border-style:ridge;">Mark</td>
+     <td class="col-2" style="border-style:ridge;">Otto</td> -->
+   <!-- </tr> --> 
+
+   <!-- <tr>
+     <th scope="col-2" style="border-style:ridge;">10am</th>
+     <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
+     <td class="col-2" style="border-style:ridge;">Otto</td>
+   </tr>
+   <tr>
+     <th scope="col-2" style="border-style:ridge;">11am</th>
+     <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
+     <td class="col-2" style="border-style:ridge;">Otto</td>
+   </tr>
+   <tr>
+     <th scope="col-2" style="border-style:ridge;">12pm</th>
+     <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
+     <td class="col-2" style="border-style:ridge;">Otto</td>
+   </tr>
+   <tr>
+     <th scope="col-2" style="border-style:ridge;">1pm</th>
+     <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
+     <td class="col-2" style="border-style:ridge;">Otto</td>
+   </tr>
+   <tr>
+     <th scope="col-2" style="border-style:ridge;">2pm</th>
+     <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
+     <td class="col-2" style="border-style:ridge;">Otto</td>
+   </tr>
+   <tr>
+     <th scope="col-2" style="border-style:ridge;">3pm</th>
+     <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
+     <td class="col-2" style="border-style:ridge;">Otto</td>
+   </tr>
+   <tr>
+     <th scope="col-2" style="border-style:ridge;">4pm</th>
+     <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
+     <td class="col-2" style="border-style:ridge;">Otto</td>
+   </tr>
+   <tr>
+     <th scope="col-2" style="border-style:ridge;">5pm</th>
+     <td class ="col-8" style="text-align: left; border-style:ridge;">Mark</td>
+     <td class="col-2" style="border-style:ridge;">Otto</td>
+   </tr>
+   -->
+
+ <!-- </tbody>
+</table> -->
